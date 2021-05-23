@@ -1,6 +1,5 @@
 import { Heading, Text } from "@chakra-ui/react";
 import Layout from "../components/Layout";
-import { CustomLink } from "../components/CustomLink";
 
 const AboutPage = () => (
     <Layout title="About" description="About Shubham Sananse" relativeCanonicalURL="/about">
