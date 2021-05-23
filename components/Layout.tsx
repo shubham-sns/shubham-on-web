@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { NextSeo } from "next-seo";
 import NextLink from "next/link";
 import Head from "next/head";
@@ -6,6 +6,13 @@ import { Button, IconButton, useColorMode, Box, Flex, Stack, Link } from "@chakr
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import Footer from "./Footer";
 import { BASE_URL } from "../constants";
+
+type LayoutProps = {
+    children?: ReactNode;
+    title: string;
+    description?: string;
+    relativeCanonicalURL: string;
+};
 
 interface INavBarButtonProps {
     text: string;
