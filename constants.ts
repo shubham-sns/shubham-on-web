@@ -58,6 +58,6 @@ export const DEFAULT_SEO_CONFIG: DefaultSeoProps = {
 
 export const TWITTER_URL = "https://twitter.com/shubham_sns";
 export const GITHUB_URL = "https://github.com/shubham-sns";
-export const LINKEDIN_URL = "https://linkedin.com/shubham-sns";
+export const LINKEDIN_URL = "https://linkedin.com/in/shubham-sns";
 export const TELEGRAM_URL = "https://t.me/TurnedOutImNoob";
 export const EMAIL = "shubhamsananse9@gmail.com";

@@ -1,21 +1,22 @@
 import React from "react";
-import { Flex, IconButton, Link } from "@chakra-ui/react";
+import { Box, Flex, IconButton, Link, Text } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaMailBulk, FaTelegramPlane, FaTwitter } from "react-icons/fa";
 import { EMAIL, GITHUB_URL, LINKEDIN_URL, TELEGRAM_URL, TWITTER_URL } from "../constants";
+import { LinkButton } from "./Layout";
 
 const Footer = () => (
     <Flex align="center" py={8} direction="column">
-        <div>
+        <Box>
             <IconButton
                 href={TWITTER_URL}
                 title="Twitter"
                 isExternal
                 as={Link}
                 aria-label="Twitter"
-                icon={<FaTwitter />}
+                icon={<FaTwitter size="24" />}
                 size="lg"
-                color="gray.500"
                 variant="ghost"
+                _hover={{ color: "#ffa7c4" }}
             />
 
             <IconButton
@@ -25,10 +26,10 @@ const Footer = () => (
                 isExternal
                 as={Link}
                 aria-label="GitHub"
-                icon={<FaGithub />}
+                icon={<FaGithub size="24" />}
                 size="lg"
-                color="gray.500"
                 variant="ghost"
+                _hover={{ color: "#ffa7c4" }}
             />
 
             <IconButton
@@ -38,10 +39,10 @@ const Footer = () => (
                 isExternal
                 as={Link}
                 aria-label="LinkedIn"
-                icon={<FaLinkedin />}
+                icon={<FaLinkedin size="24" />}
                 size="lg"
-                color="gray.500"
                 variant="ghost"
+                _hover={{ color: "#ffa7c4" }}
             />
 
             <IconButton
@@ -51,10 +52,10 @@ const Footer = () => (
                 isExternal
                 as={Link}
                 aria-label="Telegram"
-                icon={<FaTelegramPlane />}
+                icon={<FaTelegramPlane size="24" />}
                 size="lg"
-                color="gray.500"
                 variant="ghost"
+                _hover={{ color: "#ffa7c4" }}
             />
 
             <IconButton
@@ -63,12 +64,18 @@ const Footer = () => (
                 title="Email"
                 passHref
                 aria-label="Email"
-                icon={<FaMailBulk />}
+                icon={<FaMailBulk size="24" />}
                 size="lg"
-                color="gray.500"
                 variant="ghost"
+                _hover={{ color: "#ffa7c4" }}
             />
-        </div>
+        </Box>
+
+        <Text>
+            Made with <LinkButton text="Next.js" href="https://nextjs.org" /> • Hosted on{" "}
+            <LinkButton text="Vercel" href="https://vercel.com" /> • Find me on{" "}
+            <LinkButton text="Twitter" href="https://twitter.com/shubham-sns" />
+        </Text>
     </Flex>
 );
 

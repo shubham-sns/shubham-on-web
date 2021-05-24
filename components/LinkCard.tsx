@@ -1,7 +1,7 @@
 import { Box, Flex, Heading, HStack, IconButton, Link, Stack, Tag, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { AiFillGithub } from "react-icons/ai";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { BiLinkExternal } from "react-icons/bi";
 
 interface ILinkCardProps {
     name: string;
@@ -34,7 +34,7 @@ const LinkCard = ({ name, description, link, githubLink, tags }: ILinkCardProps)
                                 as={Link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                aria-label="link to the project"
+                                aria-label={`${name} - link to github repo`}
                                 variant="outline"
                                 size="sm"
                             >
@@ -47,11 +47,11 @@ const LinkCard = ({ name, description, link, githubLink, tags }: ILinkCardProps)
                                 as={Link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                aria-label="link to the project"
+                                aria-label={`${name} - link to live website`}
                                 variant="outline"
                                 size="sm"
                             >
-                                <ExternalLinkIcon size="20" />
+                                <BiLinkExternal size="20" />
                             </IconButton>
                         </NextLink>
                     </HStack>
