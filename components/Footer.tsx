@@ -74,7 +74,7 @@ const Footer = () => (
         <Text>
             Made with <LinkButton text="Next.js" href="https://nextjs.org" /> • Hosted on{" "}
             <LinkButton text="Vercel" href="https://vercel.com" /> • Find me on{" "}
-            <LinkButton text="Twitter" href="https://twitter.com/shubham-sns" />
+            <LinkButton text="Twitter" href={TWITTER_URL} />
         </Text>
     </Flex>
 );

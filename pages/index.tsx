@@ -22,7 +22,7 @@ const ProjectListComponent = () => (
 const IndexPage = () => (
     <Layout title="Home" description="Welcome to Shubham's corner of the internet" relativeCanonicalURL="">
         <Stack direction="column" spacing={5}>
-            <Text fontSize="5xl" my={4} textAlign="center" fontWeight="bold">
+            <Text as="h1" fontSize="5xl" my={4} textAlign="center" fontWeight="bold">
                 Hey, I'm Shubham! 👋
             </Text>
             <Text fontSize="xl">I'm a developer from India who loves building apps with React.</Text>
