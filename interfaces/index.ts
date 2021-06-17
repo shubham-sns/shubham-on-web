@@ -3,4 +3,5 @@ export interface IProjectCardProps {
     description: string;
     link: string;
     githubLink: string;
+    isNpmLink?: boolean;
 }

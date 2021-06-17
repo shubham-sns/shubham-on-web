@@ -5,6 +5,14 @@ export const BASE_URL: string = "https://shubham.vercel.app";
 
 export const PROJECT_LIST: Array<IProjectCardProps> = [
     {
+        name: "react-img-placeholder",
+        description:
+            "react-img-placeholder is a tiny sized and zero dependency package which helps you show placeholders/fallback when your image is loading or source fails.",
+        githubLink: "https://github.com/shubham-sns/react-img-placeholder",
+        link: "https://www.npmjs.com/package/react-img-placeholder",
+        isNpmLink: true,
+    },
+    {
         name: "Mrugjal",
         description: "Mrugjal is a clone of Instagram with all major features like upload, like, comment and save.",
         link: "https://mrugjal.vercel.app",

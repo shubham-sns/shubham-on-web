@@ -14,6 +14,7 @@ const ProjectListComponent = () => (
                 description={project.description}
                 link={project.link}
                 githubLink={project.githubLink}
+                isNpmLink={project.isNpmLink}
             />
         ))}
     </Stack>
@@ -32,8 +33,13 @@ const IndexPage = () => (
                 where I build products using React, Redux, React-Query and Next.js.
             </Text>
 
+            {/* <Text fontSize="xl">
+                I enjoy reading tech blogs, watching conferences and like to keep myself updated about new trends and
+                library which comes up in the React ecosystem.
+            </Text> */}
+
             <Stack py={5} spacing={5}>
-                <Heading>Projects</Heading>
+                <Heading as="h3">Projects</Heading>
                 <ProjectListComponent />
             </Stack>
         </Stack>

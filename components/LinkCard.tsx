@@ -2,6 +2,7 @@ import { Box, Flex, Heading, HStack, IconButton, Link, Stack, Tag, Text } from "
 import NextLink from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 import { BiLinkExternal } from "react-icons/bi";
+import { CgNpm } from "react-icons/cg";
 
 interface ILinkCardProps {
     name: string;
@@ -10,21 +11,22 @@ interface ILinkCardProps {
     githubLink: string;
     tags?: Array<string>;
     isPinned?: boolean;
+    isNpmLink?: boolean;
 }
 
-const LinkCard = ({ name, description, link, githubLink, tags }: ILinkCardProps) => {
+const LinkCard = ({ name, description, link, githubLink, tags, isNpmLink }: ILinkCardProps) => {
     return (
         <Box
             display="block"
             width="100%"
-            _hover={{ textDecoration: "none" }}
             borderWidth="1px"
             borderRadius="lg"
             padding="1.5rem"
+            // _hover={{ textDecoration: "none" }}
         >
             <Flex width="100%" align="flex-start" justifyContent="space-between" flexDirection="column">
                 <Stack direction="row" align="center" style={{ width: "100%" }} justify="space-between">
-                    <Heading size="md" as="h3">
+                    <Heading letterSpacing="wide" size="md" as="h3">
                         {name}
                     </Heading>
 
@@ -51,7 +53,7 @@ const LinkCard = ({ name, description, link, githubLink, tags }: ILinkCardProps)
                                 variant="outline"
                                 size="sm"
                             >
-                                <BiLinkExternal size="20" />
+                                {isNpmLink ? <CgNpm size="20" /> : <BiLinkExternal size="20" />}
                             </IconButton>
                         </NextLink>
                     </HStack>

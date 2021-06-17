@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import { NextSeo } from "next-seo";
 import NextLink from "next/link";
 import Head from "next/head";
-import { IconButton, useColorMode, Box, Flex, Stack, Link, HStack } from "@chakra-ui/react";
+import { IconButton, useColorMode, Box, Flex, Stack, Link, HStack, useColorModeValue } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import Footer from "./Footer";
 import { BASE_URL } from "../constants";
@@ -21,6 +21,7 @@ interface INavBarButtonProps {
 }
 
 export const LinkButton = (props: INavBarButtonProps) => {
+    const link = useColorModeValue("text.lightPink", "text.darkPink");
     return (
         <NextLink href={props.href} passHref>
             <Box
@@ -30,7 +31,7 @@ export const LinkButton = (props: INavBarButtonProps) => {
                 rel={props.target && "noopener noreferrer"}
                 textDecor="none"
                 _hover={{
-                    color: "#ffa7c4",
+                    color: link,
                 }}
             >
                 {props.text}
@@ -41,6 +42,9 @@ export const LinkButton = (props: INavBarButtonProps) => {
 
 const NavBar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
+
+    const link = useColorModeValue("text.lightPink", "text.darkPink");
+
     return (
         <Stack
             flexDirection="row"
@@ -54,7 +58,7 @@ const NavBar = () => {
         >
             <Flex mt="0.5rem">
                 <NextLink href="/">
-                    <Box cursor="pointer" h="25px" w="25px" backgroundColor="#FFA7C4" rounded="md" />
+                    <Box cursor="pointer" h="25px" w="25px" backgroundColor={link} rounded="md" />
                 </NextLink>
             </Flex>
 
@@ -66,7 +70,7 @@ const NavBar = () => {
                 />
                 <LinkButton text="blog" href="https://shubhs.hashnode.dev" target="_blank" />
 
-                <LinkButton text="about" href="/about" />
+                {/* <LinkButton text="about" href="/about" /> */}
 
                 <IconButton
                     aria-label="Toggle dark mode"
@@ -99,6 +103,11 @@ const Layout = ({ children, title, description, relativeCanonicalURL }: LayoutPr
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="icon" type="image/png" href="/static/logo.png" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+                    rel="stylesheet"
+                />
             </Head>
 
             <Box>
