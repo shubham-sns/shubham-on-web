@@ -25,7 +25,6 @@ const Footer = () => {
                 <IconButton
                     href={GITHUB_URL}
                     title="GitHub"
-                    passHref
                     isExternal
                     as={Link}
                     aria-label="GitHub"
@@ -38,7 +37,6 @@ const Footer = () => {
                 <IconButton
                     href={LINKEDIN_URL}
                     title="LinkedIn"
-                    passHref
                     isExternal
                     as={Link}
                     aria-label="LinkedIn"
@@ -51,7 +49,6 @@ const Footer = () => {
                 <IconButton
                     href={TELEGRAM_URL}
                     title="Telegram"
-                    passHref
                     isExternal
                     as={Link}
                     aria-label="Telegram"
@@ -65,7 +62,6 @@ const Footer = () => {
                     as={Link}
                     href={`mailto:${EMAIL}`}
                     title="Email"
-                    passHref
                     aria-label="Email"
                     icon={<FaMailBulk size="24" />}
                     size="lg"
