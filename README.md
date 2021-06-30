@@ -1,5 +1,1 @@
-# Shubham Sananse
-
-Source code of my blog.
-
-Runs on vercel, made using React, Next.js. Heavily inspired by [Leerob's blog](https://leerob.io).
+inspired by [Leerob's blog](https://leerob.io). [Sreetam's blog](https://sreetamdas.com) and [Dan's blog](https://overreacted.io)
