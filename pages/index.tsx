@@ -29,8 +29,11 @@ const IndexPage = () => (
             <Text fontSize="xl">I'm a developer from India who loves building apps with React.</Text>
 
             <Text fontSize="xl">
-                I'm currently a Frontend Engineer at <CustomLink href="https://veemosupport.xyz">Veemo</CustomLink>,
-                where I build products using React, Redux, React-Query and Next.js.
+                I'm currently a Frontend Engineer at{" "}
+                <Text as="span" color="#e96125">
+                    <CustomLink href="https://grofers.com">Grofers</CustomLink>
+                </Text>
+                , where I build products using React, Redux, React-Query and Next.js.
             </Text>
 
             {/* <Text fontSize="xl">
