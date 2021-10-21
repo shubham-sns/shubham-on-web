@@ -33,7 +33,7 @@ const IndexPage = () => (
                 <Text as="span" color="#e96125">
                     <CustomLink href="https://grofers.com">Grofers</CustomLink>
                 </Text>
-                , where I build products using React, Redux, React-Query and Next.js.
+                , where I build products using Typescript, React, Redux and React-Native.
             </Text>
 
             {/* <Text fontSize="xl">
