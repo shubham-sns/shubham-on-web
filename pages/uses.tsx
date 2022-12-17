@@ -11,7 +11,7 @@ function UsesPage() {
     const color = useColorModeValue("text.lightPink", "text.darkPink");
 
     return (
-        <Layout title="About" description="About Shubham Sananse" relativeCanonicalURL="/about">
+        <Layout title="Uses" description="Details about my developer setup, software and tools" relativeCanonicalURL="/uses">
             <Heading as="h1" textAlign={"center"} fontSize={"7xl"}>
                 /uses
             </Heading>
