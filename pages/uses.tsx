@@ -97,8 +97,8 @@ function UsesPage() {
                                 <ListIcon as={ArrowForwardIcon} color={color} fontSize={"larger"} />
                             </Box>
                             <Text as="span">
-                                <CustomLink href="https://brew.sh/">HomeBrew</CustomLink> can't install anything
-                                manually, can you?
+                                <CustomLink href="https://brew.sh/">HomeBrew</CustomLink> for installing and updating
+                                all the apps and cli tools easily
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -118,7 +118,7 @@ function UsesPage() {
                                 <CustomLink href="https://apps.apple.com/us/app/amphetamine/id937984704?mt=12">
                                     Amphetamine
                                 </CustomLink>{" "}
-                                when you need to keep your mac awake
+                                when you need to keep your mac awake, definitely not for online status
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -126,8 +126,7 @@ function UsesPage() {
                                 <ListIcon as={ArrowForwardIcon} color={color} fontSize={"larger"} />
                             </Box>
                             <Text as="span">
-                                <CustomLink href="https://fig.io/">Fig</CustomLink> a command line autocomplete which
-                                tells me how little I know
+                                <CustomLink href="https://fig.io/">Fig</CustomLink> a command line autocomplete which makes me realise how little I know
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -135,7 +134,7 @@ function UsesPage() {
                                 <ListIcon as={ArrowForwardIcon} color={color} fontSize={"larger"} />
                             </Box>
                             <Text as="span">
-                                <CustomLink href="https://muzzleapp.com/">Muzzle</CustomLink> all my friends are toxic
+                                <CustomLink href="https://muzzleapp.com/">Muzzle</CustomLink> turns off notifications when you share screen, <Text as='em'>all my friends are toxic</Text>
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -143,8 +142,7 @@ function UsesPage() {
                                 <ListIcon as={ArrowForwardIcon} color={color} fontSize={"larger"} />
                             </Box>
                             <Text as="span">
-                                <CustomLink href="https://topnotch.app/">TopNotch</CustomLink> belive me, your m1 would
-                                look much better with this
+                                <CustomLink href="https://topnotch.app/">TopNotch</CustomLink> please hide your mac notch, it does not look good
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -152,7 +150,7 @@ function UsesPage() {
                                 <ListIcon as={ArrowForwardIcon} color={color} fontSize={"larger"} />
                             </Box>
                             <Text as="span">
-                                <CustomLink href="https://justgetflux.com/">Flux</CustomLink> for my eyes
+                                <CustomLink href="https://justgetflux.com/">Flux</CustomLink> me trying to justify how 14 hours of screen time is not causing any damage to my eyes 
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -180,7 +178,7 @@ function UsesPage() {
                             </Box>
                             <Text as="span">
                                 <CustomLink href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">
-                                    vscodeVim
+                                    Vscode Vim
                                 </CustomLink>{" "}
                                 dont judge It's complicated. stuck in vim :wq
                             </Text>
@@ -193,7 +191,7 @@ function UsesPage() {
                                 <CustomLink href="https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph">
                                     Git Graph
                                 </CustomLink>{" "}
-                                as everyday code editor
+                                helps me manage git history compulsions, <Text as='em'>please rebase and merge</Text>
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -204,7 +202,7 @@ function UsesPage() {
                                 <CustomLink href="https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments">
                                     Better Comments
                                 </CustomLink>{" "}
-                                as everyday code editor
+                                highlight your comments, cause you might actually want to read it
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -215,7 +213,7 @@ function UsesPage() {
                                 <CustomLink href="https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens">
                                     Error Lens
                                 </CustomLink>{" "}
-                                as everyday code editor
+                                No more hovering over the error to see the message 
                             </Text>
                         </ListItem>
                     </List>
@@ -233,16 +231,18 @@ function UsesPage() {
                                 <ListIcon as={ArrowForwardIcon} color={color} fontSize={"larger"} />
                             </Box>
                             <Text as="span">
-                                <CustomLink href="https://vimium.github.io/">Vimium</CustomLink> 🙈
+                                <CustomLink href="https://vimium.github.io/">Vimium</CustomLink> navigate the web with your keeb ️
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
-                            <Text as="span">
+                            <Box>
                                 <ListIcon as={ArrowForwardIcon} color={color} fontSize={"larger"} />
+                            </Box>
+                            <Text as="span">
                                 <CustomLink href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en">
                                     uBlock Origin
                                 </CustomLink>{" "}
-                                as everyday code editor
+                                stop tracking my activity and I hate ads too 
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -252,8 +252,7 @@ function UsesPage() {
                             <Text as="span">
                                 <CustomLink href="https://chrome.google.com/webstore/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone?hl=en">
                                     SponsorBlock for YouTube
-                                </CustomLink>{" "}
-                                as everyday code editor
+                                </CustomLink> skip the annoing plugins and sposered segment of the video
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -264,7 +263,7 @@ function UsesPage() {
                                 <CustomLink href="https://chrome.google.com/webstore/detail/visualize-value/ejblinjidfhnpkjbphoendgjjnhmfoee?hl=en">
                                     Visualize Value
                                 </CustomLink>{" "}
-                                as everyday code editor
+                                quotes with minimalistic design for your ADHD brain
                             </Text>
                         </ListItem>
                     </List>
