@@ -30,7 +30,7 @@ const IndexPage = () => (
 
             <Text fontSize="xl">
                 I'm currently a Frontend Engineer at{" "}
-                <Text as="span" color="#e96125">
+                <Text as="span">
                     <CustomLink href="https://blinkit.com">blinkit</CustomLink>
                 </Text>
                 , where I build products using Typescript, React, Redux and React-Native.
