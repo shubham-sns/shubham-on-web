@@ -15,7 +15,7 @@ export const CustomLink = (props: ICustomLinkProps) => {
 
     return (
         <NextLink href={href} passHref>
-            <Link color={link} isExternal={!isInternalLink} {...props}>
+            <Link color={link} fontWeight={isInternalLink ? '' : "semibold"} isExternal={!isInternalLink} {...props}>
                 {props.children}
             </Link>
         </NextLink>
