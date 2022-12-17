@@ -63,12 +63,15 @@ const NavBar = () => {
             </Flex>
 
             <HStack spacing="3" alignItems="center" fontSize="lg">
-                <LinkButton
+                <LinkButton text="uses" href="/uses" />
+
+                <LinkButton text="blog" href="https://shubhs.hashnode.dev" target="_blank" />
+
+                {/* <LinkButton
                     text="resume"
                     href="https://drive.google.com/file/d/1TE-N5jDwK4-D33q1Oo4wPRtmQyAMySqb/view?usp=sharing"
                     target="_blank"
-                />
-                <LinkButton text="blog" href="https://shubhs.hashnode.dev" target="_blank" />
+                /> */}
 
                 {/* <LinkButton text="about" href="/about" /> */}
 
