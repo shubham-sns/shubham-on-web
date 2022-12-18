@@ -11,7 +11,11 @@ function UsesPage() {
     const color = useColorModeValue("text.lightPink", "text.darkPink");
 
     return (
-        <Layout title="Uses" description="Details about my developer setup, software and tools" relativeCanonicalURL="/uses">
+        <Layout
+            title="Uses"
+            description="Details about my developer setup, software and tools"
+            relativeCanonicalURL="/uses"
+        >
             <Heading as="h1" textAlign={"center"} fontSize={"7xl"}>
                 /uses
             </Heading>
@@ -126,7 +130,8 @@ function UsesPage() {
                                 <ListIcon as={ArrowForwardIcon} color={color} fontSize={"larger"} />
                             </Box>
                             <Text as="span">
-                                <CustomLink href="https://fig.io/">Fig</CustomLink> a command line autocomplete which makes me realise how little I know
+                                <CustomLink href="https://fig.io/">Fig</CustomLink> a command line autocomplete which
+                                makes me realise how little I know
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -134,7 +139,8 @@ function UsesPage() {
                                 <ListIcon as={ArrowForwardIcon} color={color} fontSize={"larger"} />
                             </Box>
                             <Text as="span">
-                                <CustomLink href="https://muzzleapp.com/">Muzzle</CustomLink> turns off notifications when you share screen, <Text as='em'>all my friends are toxic</Text>
+                                <CustomLink href="https://muzzleapp.com/">Muzzle</CustomLink> turns off notifications
+                                when you share screen, <Text as="em">all my friends are toxic</Text>
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -142,7 +148,8 @@ function UsesPage() {
                                 <ListIcon as={ArrowForwardIcon} color={color} fontSize={"larger"} />
                             </Box>
                             <Text as="span">
-                                <CustomLink href="https://topnotch.app/">TopNotch</CustomLink> please hide your mac notch, it does not look good
+                                <CustomLink href="https://topnotch.app/">TopNotch</CustomLink> please hide your mac
+                                notch, it does not look good
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -150,7 +157,8 @@ function UsesPage() {
                                 <ListIcon as={ArrowForwardIcon} color={color} fontSize={"larger"} />
                             </Box>
                             <Text as="span">
-                                <CustomLink href="https://justgetflux.com/">Flux</CustomLink> me trying to justify how 14 hours of screen time is not causing any damage to my eyes 
+                                <CustomLink href="https://justgetflux.com/">Flux</CustomLink> me trying to justify how
+                                14 hours of screen time is not causing any damage to my eyes
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -191,7 +199,17 @@ function UsesPage() {
                                 <CustomLink href="https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph">
                                     Git Graph
                                 </CustomLink>{" "}
-                                helps me manage git history compulsions, <Text as='em'>please rebase and merge</Text>
+                                helps me manage git history compulsions, <Text as="em">please rebase and merge</Text>
+                            </Text>
+                        </ListItem>
+                        <ListItem display="flex">
+                            <Box>
+                                <ListIcon as={ArrowForwardIcon} color={color} fontSize={"larger"} />
+                            </Box>
+                            <Text as="span">
+                                <CustomLink href="https://github.com/features/copilot">GitHub Copilot</CustomLink> alien
+                                cat which causes distruction, would be great if it talked to me instead of just writing
+                                condition blocks
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -213,7 +231,7 @@ function UsesPage() {
                                 <CustomLink href="https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens">
                                     Error Lens
                                 </CustomLink>{" "}
-                                No more hovering over the error to see the message 
+                                No more hovering over the error to see the message
                             </Text>
                         </ListItem>
                     </List>
@@ -231,7 +249,8 @@ function UsesPage() {
                                 <ListIcon as={ArrowForwardIcon} color={color} fontSize={"larger"} />
                             </Box>
                             <Text as="span">
-                                <CustomLink href="https://vimium.github.io/">Vimium</CustomLink> navigate the web with your keeb ️
+                                <CustomLink href="https://vimium.github.io/">Vimium</CustomLink> navigate the web with
+                                your keeb ️
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -242,7 +261,7 @@ function UsesPage() {
                                 <CustomLink href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en">
                                     uBlock Origin
                                 </CustomLink>{" "}
-                                stop tracking my activity and I hate ads too 
+                                stop tracking my activity and I hate ads too
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
@@ -252,7 +271,8 @@ function UsesPage() {
                             <Text as="span">
                                 <CustomLink href="https://chrome.google.com/webstore/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone?hl=en">
                                     SponsorBlock for YouTube
-                                </CustomLink> skip the annoing plugins and sposered segment of the video
+                                </CustomLink>{" "}
+                                skip the annoing plugins and sposered segment of the video
                             </Text>
                         </ListItem>
                         <ListItem display="flex">
